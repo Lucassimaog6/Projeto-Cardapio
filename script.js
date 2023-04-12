@@ -9,6 +9,7 @@ const Foods = [
 ];
 
 const foodInput = document.getElementById('food');
+const form = document.getElementById('form');
 let tableHeight = 0;
 const tableHeader = `
 <header class="grid gap-[2px] border-b-2 border-red-800 grid-cols-7 ">
@@ -21,8 +22,11 @@ const tableHeader = `
 	<h1 class="text-center bg-red-300 p-1">Domingo</h1>
 </header>`;
 
-foodInput.addEventListener('keydown', (e) => {
+form.addEventListener('submit', (e) => {
 	e.preventDefault();
+});
+
+foodInput.addEventListener('keydown', (e) => {
 	if (e.key === 'Enter') {
 		const day = document.getElementById('day').value;
 		const food = foodInput.value;
