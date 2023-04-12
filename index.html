@@ -1,0 +1,66 @@
+<html lang="pt">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script defer src="script.js"></script>
+	<title>Comidinhas</title>
+</head>
+
+<body class="bg-red-100">
+	<form class="flex gap-2 p-4 w-fit mx-auto">
+		<input class="p-1 rounded outline-none" id="food" type="text" placeholder="Digite uma comida" />
+		<select class="rounded" id="day">
+			<!-- <option disabled selected>
+				Escolha o dia
+			</option> -->
+			<option value="0">Segunda</option>
+			<option value="1">Terça</option>
+			<option value="2">Quarta</option>
+			<option value="3">Quinta</option>
+			<option value="4">Sexta</option>
+			<option value="5">Sábado</option>
+			<option value="6">Domingo</option>
+		</select>
+	</form>
+
+	<div id="table" class="border-2 bg-red-800 border-red-800 rounded w-10/12 mx-auto">
+		<header class="grid gap-[2px] border-b-2 border-red-800 grid-cols-7 ">
+			<h1 class="text-center bg-red-300 p-1">Segunda</h1>
+			<h1 class="text-center bg-red-300 p-1">Terça</h1>
+			<h1 class="text-center bg-red-300 p-1">Quarta</h1>
+			<h1 class="text-center bg-red-300 p-1">Quinta</h1>
+			<h1 class="text-center bg-red-300 p-1">Sexta</h1>
+			<h1 class="text-center bg-red-300 p-1">Sábado</h1>
+			<h1 class="text-center bg-red-300 p-1">Domingo</h1>
+		</header>
+		<div class="grid gap-[2px] grid-cols-7">
+			<div class="text-center bg-red-100 p-1"></div>
+			<div class="text-center bg-red-100 p-1"></div>
+			<div class="text-center bg-red-100 p-2 flex  justify-between">
+				<button class="hover:bg-black/20">
+					<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+						<path d="M0 0h24v24H0z" fill="none" />
+						<path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" />
+					</svg>
+				</button>
+				Arroz
+				<button onclick="" class="hover:bg-black/20">
+					<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+						<path d="M0 0h24v24H0z" fill="none" />
+						<path
+							d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z" />
+					</svg>
+				</button>
+			</div>
+			<div class="text-center bg-red-100 p-1"></div>
+			<div class="text-center bg-red-100 p-1"></div>
+			<div class="text-center bg-red-100 p-1"></div>
+			<div class="text-center bg-red-100 p-1"></div>
+		</div>
+	</div>
+</body>
+
+</html>
